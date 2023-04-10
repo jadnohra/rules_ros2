@@ -3,11 +3,11 @@ load(
     "cpp_ros2_interface_library",
     "ros2_interface_library",
 )
-load("@rules_python//python:defs.bzl", "py_library")
 
 ros2_interface_library(
     name = "pcl_msgs",
-    srcs = glob(["pcl_msgs/msg/*.msg"]),
+    # srcs = glob(["pcl_msgs/msg/*.msg"]),
+    srcs = ["pcl_msgs/msg/Vertices.msg"],
     visibility = ["//visibility:public"],
     deps = [
         "@ros2_common_interfaces//:sensor_msgs",
