@@ -18,6 +18,7 @@ ros2_cpp_library(
         "@ros2_message_filters//:message_filters",
         "@ros2_rclcpp//:rclcpp",
         "@ros2_rcpputils//:rcpputils",
+        "@pcl//:common",
         "@yaml_cpp",
     ],
 )
