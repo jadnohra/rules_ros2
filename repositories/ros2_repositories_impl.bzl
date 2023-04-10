@@ -79,7 +79,7 @@ def ros2_repositories_impl():
     maybe(
         http_archive,
         name = "ros2_pcl_msgs",
-        build_file = "@com_github_mvukov_rules_ros2//repositories:image_common.BUILD.bazel",
+        build_file = "@com_github_mvukov_rules_ros2//repositories:pcl_msgs.BUILD.bazel",
         strip_prefix = "pcl_msgs-0.3.0",
         url = "https://github.com/ros-perception/pcl_msgs/archive/refs/tags/0.3.0.tar.gz",
     )
