@@ -1,4 +1,18 @@
 workspace(name = "com_github_mvukov_rules_ros2")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "rules_pcl",
+    url = "https://github.com/jadnohra/rules_pcl/archive/v1.1.0c.tar.gz",
+    strip_prefix = "rules_pcl-1.1.0c",
+)
+
+load("@rules_pcl//bzl:repositories.bzl", "pcl_repositories")
+pcl_repositories()
+
+# NOTE: This must be loaded after the call to pcl_repositories().
+load("@rules_pcl//bzl:init_deps.bzl", "pcl_init_deps")
+pcl_init_deps()
 
 load("//repositories:repositories.bzl", "ros2_repositories")
 
