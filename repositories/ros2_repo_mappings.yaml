@@ -31,7 +31,7 @@ repositories:
     build_file: "@com_github_mvukov_rules_ros2//repositories:image_common.BUILD.bazel"
   perepction_pcl:
     name: ros2_perception_pcl
-    build_file: "@com_github_jadnohra_rules_ros2//repositories:perception_pcl.BUILD.bazel"  
+    build_file: "@com_github_mvukov_rules_ros2//repositories:perception_pcl.BUILD.bazel"  
   keyboard_handler:
     name: ros2_keyboard_handler
     build_file: "@com_github_mvukov_rules_ros2//repositories:keyboard_handler.BUILD.bazel"
