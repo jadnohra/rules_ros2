@@ -6,8 +6,7 @@ load(
 
 ros2_interface_library(
     name = "pcl_msgs",
-    # srcs = glob(["pcl_msgs/msg/*.msg"]),
-    srcs = ["pcl_msgs/msg/Vertices.msg"],
+    srcs = glob(["msg/*.msg"]),
     visibility = ["//visibility:public"],
     deps = [
         "@ros2_common_interfaces//:sensor_msgs",
