@@ -81,7 +81,7 @@ def ros2_repositories_impl():
         name = "ros2_perception_pcl",
         build_file = "@com_github_mvukov_rules_ros2//repositories:perception_pcl.BUILD.bazel",
         strip_prefix = "perception_pcl-1.7.4",
-        url = "https://github.com/ros-perception/perception_pcl/archive/refs/tags/1.7.4.tar.gz",
+        url = "https://github.com/ros-perception/perception_pcl/archive/6642b7398a4488040c44d48a48308411bcde2228.tar.gz",
     )
 
     maybe(
