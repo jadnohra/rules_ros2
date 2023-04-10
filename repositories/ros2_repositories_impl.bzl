@@ -67,21 +67,21 @@ def ros2_repositories_impl():
         sha256 = "99871bcaa8da4361d1baae9cf1507683058de8572ac3080edc41e590ffba06c0",
         url = "https://github.com/eclipse-iceoryx/iceoryx/archive/refs/tags/v2.0.2.tar.gz",
     )
-
-    maybe(
-        http_archive,
-        name = "ros2_image_common",
-        build_file = "@com_github_mvukov_rules_ros2//repositories:perception_pcl.BUILD.bazel",
-        strip_prefix = "perception_pcl-1.7.4",
-        url = "https://github.com/ros-perception/perception_pcl/archive/refs/tags/1.7.4.tar.gz",
-    )
     
     maybe(
         http_archive,
-        name = "ros2_perception_pcl",
+        name = "ros2_image_common",
         build_file = "@com_github_mvukov_rules_ros2//repositories:image_common.BUILD.bazel",
         strip_prefix = "image_common-3.1.5",
         url = "https://github.com/ros-perception/image_common/archive/refs/tags/3.1.5.tar.gz",
+    )
+
+    maybe(
+        http_archive,
+        name = "ros2_perception_pcl",
+        build_file = "@com_github_mvukov_rules_ros2//repositories:perception_pcl.BUILD.bazel",
+        strip_prefix = "perception_pcl-1.7.4",
+        url = "https://github.com/ros-perception/perception_pcl/archive/refs/tags/1.7.4.tar.gz",
     )
 
     maybe(
