@@ -75,6 +75,14 @@ def ros2_repositories_impl():
         strip_prefix = "image_common-3.1.5",
         url = "https://github.com/ros-perception/image_common/archive/refs/tags/3.1.5.tar.gz",
     )
+    
+    maybe(
+        http_archive,
+        name = "ros2_pcl_msgs",
+        build_file = "@com_github_mvukov_rules_ros2//repositories:image_common.BUILD.bazel",
+        strip_prefix = "pcl_msgs-0.3.0",
+        url = "https://github.com/ros-perception/pcl_msgs/archive/refs/tags/0.3.o.tar.gz",
+    )
 
     maybe(
         http_archive,
