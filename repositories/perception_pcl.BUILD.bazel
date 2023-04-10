@@ -13,7 +13,7 @@ ros2_cpp_library(
     includes = ["pcl_conversions/include"],
     visibility = ["//visibility:public"],
     deps = [
-        "@ros2_common_interfaces//:std_msgs",
+        "@ros2_common_interfaces//:cpp_std_msgs",
         "@ros2_common_interfaces//:cpp_sensor_msgs",
         "@ros2_message_filters//:message_filters",
         "@ros2_rclcpp//:rclcpp",
